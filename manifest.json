@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "WW Helper",
+  "version": "1.0",
+  "description": "Mark info as you play",
+
+  "action": {
+    "default_popup": "index.html",
+    "default_icon":"extnIcon.png"
+  }
+}
