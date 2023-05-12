@@ -56,3 +56,14 @@ img {
 .dead {
     filter: brightness(50%);
 }
+
+.copyAck {
+    font-size: 10px;
+    display: none;
+    padding: 5px;
+}
+
+#unchecked {
+    padding: 5px;
+
+}
