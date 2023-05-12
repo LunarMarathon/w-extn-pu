@@ -4,6 +4,7 @@ body {
     box-sizing: border-box;
     min-width: 300px;
     background-color: rgba(255, 255, 255, 0.1);
+    font-weight: bold;
 }
 
 .gameGrid {
@@ -57,13 +58,34 @@ img {
     filter: brightness(50%);
 }
 
-.copyAck {
-    font-size: 10px;
-    display: none;
-    padding: 5px;
+#unchecked {
+    /* padding: 5px; */
+    font-weight: bold;
+
 }
 
-#unchecked {
-    padding: 5px;
+.copy {
+    filter: invert(45%) sepia(98%) saturate(3505%) hue-rotate(316deg) brightness(100%) contrast(102%);
+    /* this makes the svg pink */
+}
 
+.uncheckCont {
+    display: flex;
+    align-items: center;
+}
+
+#reset:hover {
+    background-color: #FF3F80;
+    color: white;
+}
+
+#reset {
+    box-sizing: border-box;
+    margin: 10px 0px 0px 0px;
+    font-weight: bold;
+    border: 2px solid #FF3F80;
+}
+
+.bottomCont{
+    padding: 10px;
 }

@@ -118,7 +118,11 @@ function copyToClipboard() {
     navigator.clipboard.writeText(copyText.textContent)
     // alert("Copied the text: " + copyText)
     //This alert was causing issues in copying the text lol
-    document.getElementById("copyAck").style.display = "block"
+    // document.getElementById("copyAck").style.display = "block"
+    document.getElementById("copyBtn").innerHTML = `<img src = "clipboard-check-solid.svg" class="copy"/>`
+    setTimeout(function(){
+        document.getElementById("copyBtn").innerHTML = `<img src="clipboard-regular.svg" class="copy" />`
+    }, 1500)
 }
 
 if (localStorage.getItem(`checkedText`)) {
